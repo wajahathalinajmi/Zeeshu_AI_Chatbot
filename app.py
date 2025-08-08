@@ -16,7 +16,7 @@ if st.button("Send"):
         try:
             # Send request to backend API
             res = requests.post(
-                "http://127.0.0.1:8000/chat/",  # Your FastAPI backend endpoint
+                "https://chatbot-backend-wro1.onrender.com/chat/",  # Your FastAPI backend endpoint
                 json={"message": user_input}
             )
 
